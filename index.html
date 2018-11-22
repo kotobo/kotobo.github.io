@@ -10,15 +10,10 @@
 		<script>
 			 $.ajax({
         type: "post",
-        dataType: "html",
         url: 'https://kapi1.gearhostpreview.com/',
-        data: dataurl,
+        data: "123",
         success: function (data) {
-            if (data != "") {
-                $("#pager").pager({ pagenumber: pagenumber, pagecount: data.split("$$")[1], buttonClickCallback: PageClick });
-                $("#anhtml").html(data.split("$$")[0]);
 
-            }
         }
     });
 		</script>
